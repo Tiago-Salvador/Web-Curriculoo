@@ -84,5 +84,18 @@
       "description": "Sou um profissional com 3 anos de experiência em atendimento ao cliente, pós-vendas, prospecção e retenção de vendas.\nTenho habilidades avançadas em documentação com o pacote Office e sou especialista no uso do ChatGPT para criação, desenvolvimento e manutenção do Chat PRO, uma ferramenta de automação do WhatsApp.\nAlém disso, sou responsável pelo setor financeiro da empresa, onde aplico minha sólida experiência em administração e desenvolvimento de liderança no ambiente de trabalho, sempre focando na excelência e na melhoria contínua da empresa."
     }
     
+  ],
+
+  "portfolio": [
+    {
+      "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
+      "url": "https://github.com/RenanJPaula/js-developer-pokedex",
+      "github": true
+    },
+    {
+      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
+      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
+      "github": true
+    }
   ]
 }
