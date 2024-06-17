@@ -1,6 +1,6 @@
 {
   "name": "Natanael Tiago",
-  "photo": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Foto%20Perfil.jpg?raw=true",
+  "photo": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/mainassets/img/Foto%20Perfil.jpg?raw=true",
   "job": "Desenvolvedor Web",
   "location": "Natal - RN",
   "phone": "(84) 99900-2317",
@@ -13,11 +13,11 @@
       },
       {
         "name": "HTML",
-        "logo": "https://raw.githubusercontent.com/Tiago-Salvador/Web-Curriculo/403767b7ed0ec16de47ec9b00f456000d96142a6/assets/img/icons/html.svg"
+        "logo": "https://raw.githubusercontent.com/Tiago-Salvador/Web-Curriculo/403767b7ed0ec16de47ec9b00f456000d96142a6assets/img/icons/html.svg"
       },
       {
         "name": "CSS",
-        "logo": "https://raw.githubusercontent.com/Tiago-Salvador/Web-Curriculo/403767b7ed0ec16de47ec9b00f456000d96142a6/assets/img/icons/css.svg"
+        "logo": "https://raw.githubusercontent.com/Tiago-Salvador/Web-Curriculo/403767b7ed0ec16de47ec9b00f456000d96142a6assets/img/icons/css.svg"
       },
       {
         "name": "Java",
@@ -52,29 +52,29 @@
         "curso": "Arquitetura e Organização de Computadores",
         "duracao": "240 Horas",
         "instituicao": "Faculdade Digital Descomplica",
-        "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true",
-        "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/Certificado%20-%20Arquitetura%20e%20Organiza%C3%A7%C3%A3o%20de%20Computadores.jpg?raw=true"
+        "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/mainassets/img/icons/logo-descomplica.png?raw=true",
+        "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/mainassets/img/Certificados/Certificado%20-%20Arquitetura%20e%20Organiza%C3%A7%C3%A3o%20de%20Computadores.jpg?raw=true"
       },
       {
         "curso": "Programação Básica",
         "duracao": "160 Horas",
         "instituicao": "Faculdade Digital Descomplica",
-        "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true",
-        "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/Certificado%20-%20Programming%20Basics.jpg?raw=true"
+        "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/mainassets/img/icons/logo-descomplica.png?raw=true",
+        "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/mainassets/img/Certificados/Certificado%20-%20Programming%20Basics.jpg?raw=true"
       },
       {
         "curso": "Object-Oriented Developer",
         "duracao": "240 Horas",
         "instituicao": "Faculdade Digital Descomplica",
-        "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true",
-        "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/Certificado%20-%20Object-Oriented%20Developer.jpg?raw=true"
+        "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/mainassets/img/icons/logo-descomplica.png?raw=true",
+        "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/mainassets/img/Certificados/Certificado%20-%20Object-Oriented%20Developer.jpg?raw=true"
       },
       {
         "curso": "DB Developer",
         "duracao": "160 Horas",
         "instituicao": "Faculdade Digital Descomplica",
-        "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true",
-        "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/Certificado%20-%20DB%20Developer.jpg?raw=true"
+        "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/mainassets/img/icons/logo-descomplica.png?raw=true",
+        "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/mainassets/img/Certificados/Certificado%20-%20DB%20Developer.jpg?raw=true"
       }
   ],
   "professionalExperience": [

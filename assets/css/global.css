@@ -18,7 +18,7 @@ body, .background {
     min-height: 100vh; /* Garante que o body tenha no mínimo 100% da altura da viewport */
     background-color: black;
     color: white;
-    background-image: url('/assets/img/Background/tec-background.jpg');
+    background-image: url('assets/img/Background/tec-background.jpg');
     background-size: cover; /* Cobrir todo o espaço disponível */
     background-position: center; /* Centralizar o background */
     background-repeat: no-repeat; /* Não repetir o background */
@@ -35,7 +35,7 @@ body, .background {
 /*
 .main ::before{
     content: '';
-    background-image: url('/assets/img/Background/background-top.svg');
+    background-image: url('assets/img/Background/background-top.svg');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -49,7 +49,7 @@ body, .background {
 
 .main ::after{
     content: '';
-    background-image: url('/assets/img/Background/background-top.svg');
+    background-image: url('assets/img/Background/background-top.svg');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
