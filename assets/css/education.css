@@ -20,6 +20,13 @@
     position: relative; /* Para posicionamento absoluto */
 }
 
+.faculdade-logo {
+    width: 40px; /* ajuste o tamanho do logo */
+    height: 40px;
+    float: left; /* faz a logo flutuar à esquerda */
+    margin-right: 10px; /* ajuste o espaçamento entre o logo e o texto */
+  }
+
 .education li {
     display: flex;
     flex-direction: row; /* Ajusta para linha */
@@ -71,12 +78,12 @@
     margin-top: .5rem; /* Espaçamento entre o título e a imagem */
 }
 
-.education li .title.github::before {
+.education li .h2 .descomplica::before {
     content: '';
     display: inline-block;
     width: 1rem;
     height: 1rem;
-    background-image: url('/assets/img/icons/github.svg');
+    background-image: url('${.education.logourl}');
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: .5rem;

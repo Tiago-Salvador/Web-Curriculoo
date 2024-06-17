@@ -41,11 +41,12 @@ function updateEducation(educationData) {
     educationContainer.innerHTML = educationData.map(curso => {
         return `
             <li class="education-item">
-                <div class="logo-faculdade">
-                    <img src="${curso.logo_url}" alt="Logo ${curso.instituicao}">
-                </div>
                 <div class="education-details">
-                    <h2>${curso.curso}</h2>
+                     <h2 class="faculdade-titulo">
+                        <img src="${curso.logo_url}" alt="Logo ${curso.instituicao}" class="faculdade-logo">
+                         ${curso.curso}
+                    </h2>
+                    
                     <p><strong>Duração:</strong> ${curso.duracao}</p>
                     <p><strong>Instituição:</strong> ${curso.instituicao}</p>
                     ${curso.certificado_url ? `
@@ -59,7 +60,6 @@ function updateEducation(educationData) {
         `;
     }).join('');
 }
-
 
 
 
