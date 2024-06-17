@@ -51,7 +51,7 @@
     height: 1rem;
     margin-left: 0.5rem; /* Espaço à esquerda do ícone */
     margin-right: 1rem; /* Espaço à direita do ícone */
-    background-image: url('assets/img/icons/arrow-top.svg');
+    background-image: url('/assets/img/icons/arrow-top.svg');
     background-repeat: no-repeat;
     background-size: contain;
     transition: .25s;

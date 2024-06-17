@@ -57,19 +57,19 @@
 }
 
 .information .job::before {
-    background-image: url('assets/img/icons/User-blue.png');
+    background-image: url('/assets/img/icons/User-blue.png');
 }
 
 .information .location::before {
-    background-image: url('assets/img/icons/icon-blue-pin.png');
+    background-image: url('/assets/img/icons/icon-blue-pin.png');
 }
 
 .information .email::before {
-    background-image: url('assets/img/icons/icon-blue1-email.png');
+    background-image: url('/assets/img/icons/icon-blue1-email.png');
 }
 
 .information .phone::before {
-    background-image: url('assets/img/icons/icon-blue-number.png');
+    background-image: url('/assets/img/icons/icon-blue-number.png');
 }
 
 @media only screen and (min-width: 768px) {
