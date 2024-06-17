@@ -23,8 +23,9 @@
 .faculdade-logo {
     width: 40px; /* ajuste o tamanho do logo */
     height: 40px;
-    float: left; /* faz a logo flutuar à esquerda */
     margin-right: 10px; /* ajuste o espaçamento entre o logo e o texto */
+    vertical-align: middle; /* alinha a logo no centro verticalmente */
+    display: inline-block; /* para que a logo seja tratada como um bloco inline */
   }
 
 .education li {
@@ -61,6 +62,7 @@
 
 .education li p {
     margin: 0;
+    clear:both;
 }
 
 .education li .certificado-details {
