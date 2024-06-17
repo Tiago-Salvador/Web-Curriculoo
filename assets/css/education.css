@@ -1,0 +1,111 @@
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.education-item {
+    display: flex;
+    flex-direction: row; /* Ajusta para linha */
+    justify-content: flex-start; /* Alinha à esquerda */
+    align-items: flex-start;
+    margin: 1rem 0;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    position: relative; /* Para posicionamento absoluto */
+}
+
+.education li {
+    display: flex;
+    flex-direction: row; /* Ajusta para linha */
+    justify-content: flex; /* Alinha à esquerda */
+    align-items: flex-start;
+    margin: 1rem 0;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+}
+
+.education .education-content {
+    flex: 1; /* Ocupa o espaço disponível */
+}
+
+.logo-faculdade {
+    margin-right: .5rem; /* Espaçamento entre a logo e o texto */
+}
+
+.logo-faculdade img {
+    width: 40px; /* Largura da logo */
+    height: 40px; /* Altura da logo */
+    border-radius: 50%; /* Formato circular */
+}
+
+.education li h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+
+.education li p {
+    margin: 0;
+}
+
+.education li .certificado-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 1rem; /* Espaçamento entre o título e a imagem */
+}
+
+.education li .certificado-details img.certificado-img {
+    max-width: 100%; /* Ajusta a largura da imagem */
+    height: auto;
+    display: block;
+    border-radius: 1rem; /* Arredonda as bordas da imagem */
+    margin-top: .5rem; /* Espaçamento entre o título e a imagem */
+}
+
+.education li .title.github::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url('/assets/img/icons/github.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.education li a {
+    color: #007bff; /* Cor para links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Efeito de transição suave */
+}
+
+.education li a:hover {
+    color: #0056b3; /* Cor ao passar o mouse */
+}
+
+@media (min-width: 768px) {
+    .education {
+        flex-direction: row; /* Altera para linha */
+        flex-wrap: wrap; /* Permite que os itens quebrem linha conforme necessário */
+        justify-content: space-between; /* Espaçamento entre os itens */
+    }
+
+    .education li {
+        width: calc(50% - 1rem); /* Calcula 50% da largura menos o espaçamento */
+        margin: 0.5rem; /* Espaçamento entre os itens */
+    }
+
+    .education-item {
+        width: calc(50% - 1rem); /* Calcula 50% da largura menos o espaçamento */
+        margin: 0.5rem; /* Espaçamento entre os itens */
+    }
+}

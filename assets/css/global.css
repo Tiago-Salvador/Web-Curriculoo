@@ -1,0 +1,89 @@
+
+
+*{
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+a{
+    .informations a{
+    color:white;
+}
+}
+
+body, .background {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Garante que o body tenha no mínimo 100% da altura da viewport */
+    background-color: black;
+    color: white;
+    background-image: url('/assets/img/Background/tec-background.jpg');
+    background-size: cover; /* Cobrir todo o espaço disponível */
+    background-position: center; /* Centralizar o background */
+    background-repeat: no-repeat; /* Não repetir o background */
+    overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+.main {
+    margin: .5rem auto; /* Centraliza o contêiner no meio da página */
+    padding: 1rem;
+    border: 1px solid white;
+    max-width: 1200px; /* Define uma largura máxima para o contêiner */
+    border-radius: px; /* Bordas arredondadas */
+}
+/*
+.main ::before{
+    content: '';
+    background-image: url('/assets/img/Background/background-top.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 130vw;
+    height: 90vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main ::after{
+    content: '';
+    background-image: url('/assets/img/Background/background-top.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 90vw;
+    height: 130vw;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+*/
+
+
+@media only screen and (min-width: 768px){
+    
+    .main{
+        max-width: 1024px;
+        margin:  1rem auto;
+    }
+
+    .main ::before{
+        width: 70vw;
+
+    }
+
+
+    .main ::after{
+        width: 5vw;
+    }
+}
+
+@media (max-width: 767px) {
+    body, .background {
+        background-attachment: fixed; /* Mantém o background fixo em dispositivos móveis */
+    }
+}

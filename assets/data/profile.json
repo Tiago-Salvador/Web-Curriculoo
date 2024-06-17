@@ -1,0 +1,88 @@
+{
+  "name": "Natanael Tiago",
+  "photo": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Foto%20Perfil.jpg?raw=true",
+  "job": "Desenvolvedor Web",
+  "location": "Natal - RN",
+  "phone": "(84) 99900-2317",
+  "email": "natanaeltiago2566@gmail.com",
+  "skills": {
+    "hardSkills": [
+      {
+        "name": "Nodejs",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png"
+      },
+      {
+        "name": "HTML",
+        "logo": "https://raw.githubusercontent.com/Tiago-Salvador/Web-Curriculo/403767b7ed0ec16de47ec9b00f456000d96142a6/assets/img/icons/html.svg"
+      },
+      {
+        "name": "CSS",
+        "logo": "https://raw.githubusercontent.com/Tiago-Salvador/Web-Curriculo/403767b7ed0ec16de47ec9b00f456000d96142a6/assets/img/icons/css.svg"
+      },
+      {
+        "name": "Java",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/java.png"
+      },
+      {
+        "name": "Angular",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/angular.png"
+      },
+      {
+        "name": "Postgresql",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png"
+      }
+    ],
+    "softSkills": [
+      "Atendiment ao Cliente",
+      "Prospecção de Vendas",
+      "Controle de Estoque",
+      "Trabalho em Equipe",
+      "Flexibilidade",
+      "Organização",
+      "Criação, Desenvolvimento e Automação do WhatsApp com o Chat-Pro"
+    ]
+  },
+  "languages": [
+    "Português BR",
+    "Inglês (intermediário)",
+    "Espanhol (intermediário)"    
+  ],
+  "education": [
+    {
+        "curso": "Arquitetura e Organização de Computadores",
+        "duracao": "240 Horas",
+        "instituicao": "Faculdade Digital Descomplica",
+        "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true",
+        "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/Certificado%20-%20Arquitetura%20e%20Organiza%C3%A7%C3%A3o%20de%20Computadores.jpg?raw=true"
+      },
+      {
+        "curso": "Programação Básica",
+        "duracao": "160 Horas",
+        "instituicao": "Faculdade Digital Descomplica",
+        "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true",
+        "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/Certificado%20-%20Programming%20Basics.jpg?raw=true"
+      },
+      {
+        "curso": "Object-Oriented Developer",
+        "duracao": "240 Horas",
+        "instituicao": "Faculdade Digital Descomplica",
+        "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true",
+        "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/Certificado%20-%20Object-Oriented%20Developer.jpg?raw=true"
+      },
+      {
+        "curso": "DB Developer",
+        "duracao": "160 Horas",
+        "instituicao": "Faculdade Digital Descomplica",
+        "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true",
+        "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/Certificado%20-%20DB%20Developer.jpg?raw=true"
+      }
+  ],
+  "professionalExperience": [
+    {
+      "name": "Academia - Engenharia do Corpo",
+      "period": "2021 - até o momento",
+      "description": "Sou um profissional com 3 anos de experiência em atendimento ao cliente, pós-vendas, prospecção e retenção de vendas.\nTenho habilidades avançadas em documentação com o pacote Office e sou especialista no uso do ChatGPT para criação, desenvolvimento e manutenção do Chat PRO, uma ferramenta de automação do WhatsApp.\nAlém disso, sou responsável pelo setor financeiro da empresa, onde aplico minha sólida experiência em administração e desenvolvimento de liderança no ambiente de trabalho, sempre focando na excelência e na melhoria contínua da empresa."
+    }
+    
+  ]
+}

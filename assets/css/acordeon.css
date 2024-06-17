@@ -1,0 +1,79 @@
+
+
+.acordeon{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+    border: 1px solid white;
+    border-radius: 2rem;
+    transition: 0.25s;
+}
+
+
+.acordeon.open,
+.acordeon:hover{
+    background-color: #0f84d79d;
+    border-color: #0f83d7;
+    
+}
+.acordeon .trigger{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.acordeon .trigger h2{
+    margin: 0;
+    font-size: 1.5rem;
+
+}
+
+.acordeon .trigger:hover{
+    cursor: pointer;
+}
+
+.acordeon .trigger::after {
+    content: '';
+    display: inline-block;
+    position: absolute; /* Posiciona a imagem de forma absoluta dentro do contêiner pai */
+    right: 0; /* Alinha a imagem ao extremo direito */
+    top: 50%; /* Centraliza verticalmente a imagem */
+    transform: translateY(-50%); /* Ajuste fino para centralizar a imagem verticalmente */
+    width: 2rem;
+    height: 1rem;
+    margin-left: 0.5rem; /* Espaço à esquerda do ícone */
+    margin-right: 1rem; /* Espaço à direita do ícone */
+    background-image: url('/assets/img/icons/arrow-top.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .25s;
+}
+
+
+.acordeon.open .trigger::after {
+    transform: rotate(180deg);
+}
+
+.acordeon .content {
+    display: none;
+    overflow: hidden;
+    height: 0;
+    transition: opacity .25s ease-in-out;
+}
+
+.acordeon.open .content {
+    display: block;
+    height: auto;
+    opacity: 1;
+    padding: 1rem; /* Adicione um padding para espaçamento interno */
+
+}
+
