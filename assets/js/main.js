@@ -19,7 +19,7 @@ function updateProfileInfo(profileData) {
 
     const email = document.getElementById('profile.email');
     email.innerText = profileData.email;
-    email.href = `mailto:${profileData.email}`;
+    email.href = `carregando:${profileData.email}`;
 }
 
 function updateSoftSkills(profileData) {
@@ -63,32 +63,6 @@ function updateEducation(educationData) {
 }
 
 
-function updateCursos(cursosData) {
-    const cursosContainer = document.getElementById('profile.cursosContainer');
-    educationContainer.innerHTML = cursosData.map(cursoss => {
-        return `
-        
-            <li class="education-item">
-                <div class="education-details">
-                     <h2 class="faculdade-titulo">
-                        <img src="${cursoss.logo_url}" alt="Logo ${cursoss.instituicao}" class="faculdade-logo">
-                         ${cursoss.curso}
-                    </h2>
-                    
-                    <p><strong>Duração:</strong> ${cursoss.duracao}</p>
-                    <p><strong>Instituição:</strong> ${cursoss.instituicao}</p>
-                    ${cursoss.certificado_url ? `
-                        <div class="certificado-details">
-                            <p><strong>Certificado:</strong></p>
-                            <img class="certificado-img" src="${cursoss.certificado_url}" alt="Certificado de ${cursoss.curso}">
-                        </div>` : ''
-                    }
-                </div>
-            </li>
-        `;
-    }).join('');
-}
-
 
 function updateProfessionalExperience(profileData) {
     const professionalExperience = document.getElementById('profile.professionalExperience');
@@ -124,7 +98,6 @@ function updatePortfolio(profileData) {
     updateHardSkills(profileData);
     updateLanguages(profileData);
     updateEducation(profileData.education);
-    updateCursos(profileData.cursos);
     updateProfessionalExperience(profileData);
     updatePortfolio(profileData);
 })();
