@@ -1,3 +1,5 @@
+
+
 .education {
     display: flex;
     flex-direction: column;
@@ -117,4 +119,26 @@
         width: calc(50% - 1rem); /* Calcula 50% da largura menos o espaçamento */
         margin: 0.5rem; /* Espaçamento entre os itens */
     }
+}
+
+
+.faculdade-info {
+    margin-bottom: 1rem; /* Espaçamento inferior */
+    padding: 1rem; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 1rem; /* Borda arredondada */
+}
+
+.faculdade-info h2 {
+    font-size: 1.5rem; /* Tamanho da fonte para o título */
+    font-weight: 700; /* Negrito */
+    margin-bottom: 0.5rem; /* Espaçamento inferior */
+}
+
+.faculdade-info p {
+    margin: 0.5rem 0; /* Espaçamento ao redor dos parágrafos */
+}
+
+.faculdade-info strong {
+    font-weight: 700; /* Negrito para elementos strong */
 }

@@ -32,11 +32,10 @@
     <link rel="stylesheet" href="/assets/css/experience.css">
     <!--Skills CSS-->
     <link rel="stylesheet" href="/assets/css/skills.css">
-        <!--Footer CSS-->
-        <link rel="stylesheet" href="/assets/css/footer.css">
-
-
-
+    <!--Footer CSS-->
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <!--Portfolio CSS-->
+    <link rel="stylesheet" href="/assets/css/portfolio.css">
 </head>
 <body>
     <div class="main">
@@ -92,13 +91,32 @@
             </div>
         </section>
 
-        <section class="acordeon ">
+        <section class="acordeon open ">
             <button class="trigger" type="button">
                 <h2>Formação Acadêmica</h2>
             </button>
             <div class="content">
+                <div class="faculdade-info">
+                    <h2 > <img src="https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true"alt="Logo" class="faculdade-logo">Engenharia da Computação</h2>
+                    <p><strong>Instituição:</strong> Faculdade Digital Descomplica</p>
+                    <p><strong>
+                        Tempo na faculdade:
+                    </strong> 4 anos</p>
+                    <p><strong>Diploma:</strong> Bacharel em Engenharia da Computação (Em andamento)</p>
+                    <p><strong>Localização:</strong> Rio Grande do Norte, Brasil</p>
+                    <p><strong>Período:</strong> 2023 - 2027</p>
+                </div>
+                
+                
                 <ul class="education" id="profile.educationContainer"> Carregando...</ul>
- 
+                <div class="faculdade-info">
+                    <h2 > <img src="/assets/img/icons/Logo-Dio-removebg-preview.png"alt="Dio" class="faculdade-logo">Digital Inovation One</h2>
+                    <p> Cursos de Linguagens da Programação </p>                  
+                </div>
+
+                <ul class="cursos" id="profile.cursosContainer"> Carregando...</ul>
+                
+                
             </div>
         </section>
 
@@ -113,27 +131,29 @@
             </div>
         </section>
    
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Meu Portfólio</h2>
+            </button>
+            <div class="content">
+                <ul class="project" id="profile.portfolio">
+                    <!-- Os itens do portfólio serão inseridos dinamicamente aqui -->
+                </ul>
+            </div>
+        </section>
+        
+ 
+    
+    <footer>
+        <a href="http://www.dio.me/"> 
+            <img src="https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/6a27cc911361ece1c2d886a6ab15efb3894ee2cb/assets/img/dio.svg" alt="Logo Dio">
+        </a>
 
-    <section class="acordeon">
-        <button class="trigger" type="button" >
-            <h2>Meu Portifólio</h2>
-        </button>
-        <div class="content">
-            <ul class="experience" id="profile.professionalExperience">
-            </ul>
-        </div>
-    </section>
 
-
-<footer>
-    <a href="http://www.dio.me/"> 
-        <img src="https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/6a27cc911361ece1c2d886a6ab15efb3894ee2cb/assets/img/dio.svg" alt="Logo Dio">
-    </a>
-
-
-</footer>
+    </footer>
 
 </div>
+
     <script src="/assets/js/api.js"></script>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/acordeon.js"></script>

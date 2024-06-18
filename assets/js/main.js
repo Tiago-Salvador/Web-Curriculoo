@@ -40,6 +40,7 @@ function updateEducation(educationData) {
     const educationContainer = document.getElementById('profile.educationContainer');
     educationContainer.innerHTML = educationData.map(curso => {
         return `
+        
             <li class="education-item">
                 <div class="education-details">
                      <h2 class="faculdade-titulo">
@@ -62,6 +63,31 @@ function updateEducation(educationData) {
 }
 
 
+function updateCursos(cursosData) {
+    const cursosContainer = document.getElementById('profile.cursosContainer');
+    educationContainer.innerHTML = cursosData.map(cursoss => {
+        return `
+        
+            <li class="education-item">
+                <div class="education-details">
+                     <h2 class="faculdade-titulo">
+                        <img src="${curso.logo_url}" alt="Logo ${curso.instituicao}" class="faculdade-logo">
+                         ${curso.curso}
+                    </h2>
+                    
+                    <p><strong>Duração:</strong> ${curso.duracao}</p>
+                    <p><strong>Instituição:</strong> ${curso.instituicao}</p>
+                    ${curso.certificado_url ? `
+                        <div class="certificado-details">
+                            <p><strong>Certificado:</strong></p>
+                            <img class="certificado-img" src="${curso.certificado_url}" alt="Certificado de ${curso.curso}">
+                        </div>` : ''
+                    }
+                </div>
+            </li>
+        `;
+    }).join('');
+}
 
 
 function updateProfessionalExperience(profileData) {
@@ -76,6 +102,20 @@ function updateProfessionalExperience(profileData) {
         `;
     }).join('');
 }
+function updatePortfolio(profileData) {
+    const portfolio = document.getElementById('profile.portfolio');
+    if (portfolio) {
+        portfolio.innerHTML = profileData.portfolio.map(project => {
+            return `
+                <li>
+                    <h3 ${project.github ? 'class="github"' : ''}>${project.name}</h3>
+                    <a href="${project.url}" target="_blank">${project.url}</a>
+                </li>
+            `;
+        }).join('');
+    }
+}
+
 
 (async () => {
     const profileData = await fetchProfileData();
@@ -84,5 +124,7 @@ function updateProfessionalExperience(profileData) {
     updateHardSkills(profileData);
     updateLanguages(profileData);
     updateEducation(profileData.education);
+    updateCursos(profileData.cursos);
     updateProfessionalExperience(profileData);
+    updatePortfolio(profileData);
 })();

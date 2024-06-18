@@ -77,6 +77,16 @@
         "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/Certificado%20-%20DB%20Developer.jpg?raw=true"
       }
   ],
+
+  "curso": [
+    {
+        "curso": "JavaScript Developer",
+        "duracao": "39 Horas",
+        "instituicao": "Digital Inovation One",
+        "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true",
+        "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/JavaScript%20Developer.jpg?raw=true"
+      }
+    ],
   "professionalExperience": [
     {
       "name": "Academia - Engenharia do Corpo",
@@ -85,17 +95,18 @@
     }
     
   ],
-
-  "portfolio": [
-    {
-      "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
-      "url": "https://github.com/RenanJPaula/js-developer-pokedex",
-      "github": true
-    },
-    {
-      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
-      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
-      "github": true
-    }
-  ]
-}
+  
+    "portfolio": [
+      {
+        "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
+        "url": "https://github.com/RenanJPaula/js-developer-pokedex",
+        "github": true
+      },
+      {
+        "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
+        "url": "https://github.com/RenanJPaula/js-developer-portfolio",
+        "github": true
+      }
+    ]
+  }
+  
