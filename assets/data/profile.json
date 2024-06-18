@@ -77,6 +77,13 @@
         "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/Certificado%20-%20DB%20Developer.jpg?raw=true"
       },
       {
+        "curso": "Smart Data Structures",
+        "duracao": "160 Horas",
+        "instituicao": "Faculdade Digital Descomplica",
+        "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true",
+        "certificado_url": "https://microcertificado.descomplica.com.br/e4915f238ee6a7d58dd652f548337c9eef81fd673460572c6a454a1ab87ccf18.png"
+      },
+      {
         "curso": "JavaScript Developer",
         "duracao": "39 Horas",
         "instituicao": "Digital Inovation One",
