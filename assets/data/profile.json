@@ -105,13 +105,13 @@
   
     "portfolio": [
       {
-        "name": "Criação de uma Pokedex",
-        "url": "https://github.com/RenanJPaula/js-developer-pokedex",
+        "name": "Pokedex com API",
+        "url": "https://github.com/Tiago-Salvador/js-developer-pokedex",
         "github": true
       },
       {
-        "name": "Caregando ...",
-        "url": "https://github.com/RenanJPaula/js-developer-portfolio",
+        "name": "Netflix Clone",
+        "url": "https://github.com/Tiago-Salvador/NetflixClone-Portifolio",
         "github": true
       }
     ]
