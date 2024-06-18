@@ -71,16 +71,16 @@ function updateCursos(cursosData) {
             <li class="education-item">
                 <div class="education-details">
                      <h2 class="faculdade-titulo">
-                        <img src="${curso.logo_url}" alt="Logo ${curso.instituicao}" class="faculdade-logo">
-                         ${curso.curso}
+                        <img src="${cursoss.logo_url}" alt="Logo ${cursoss.instituicao}" class="faculdade-logo">
+                         ${cursoss.curso}
                     </h2>
                     
-                    <p><strong>Duração:</strong> ${curso.duracao}</p>
-                    <p><strong>Instituição:</strong> ${curso.instituicao}</p>
-                    ${curso.certificado_url ? `
+                    <p><strong>Duração:</strong> ${cursoss.duracao}</p>
+                    <p><strong>Instituição:</strong> ${cursoss.instituicao}</p>
+                    ${cursoss.certificado_url ? `
                         <div class="certificado-details">
                             <p><strong>Certificado:</strong></p>
-                            <img class="certificado-img" src="${curso.certificado_url}" alt="Certificado de ${curso.curso}">
+                            <img class="certificado-img" src="${cursoss.certificado_url}" alt="Certificado de ${cursoss.curso}">
                         </div>` : ''
                     }
                 </div>
