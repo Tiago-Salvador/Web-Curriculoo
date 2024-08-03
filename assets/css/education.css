@@ -61,6 +61,8 @@
     margin-bottom: .5rem;
     word-break: break-word; /* Quebra de palavra para títulos */
     hyphens: auto; /* Hifenização automática para melhor quebra de linha */
+    overflow-wrap: break-word; /* Garante quebra de linha apropriada */
+    min-width: 0; /* Permite que o título quebre linha adequadamente */
 }
 
 .education li p {
@@ -70,7 +72,7 @@
 .education li .certificado-details {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha a imagem e o conteúdo à esquerda */
+    align-items: center; /* Centraliza a imagem e o conteúdo */
     margin-top: 1rem;
     overflow: hidden; /* Garante que nada ultrapasse o contêiner */
 }
@@ -83,7 +85,6 @@
     display: block;
     border-radius: 1rem;
     margin-top: .5rem;
-    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura e altura */
 }
 
 .education li .h2 .descomplica::before {
@@ -128,7 +129,7 @@
 @media (max-width: 767px) {
     .education-item {
         flex-direction: column; /* Altera a direção do layout para coluna em telas menores */
-        align-items: flex-start; /* Alinha o conteúdo à esquerda */
+        align-items: center; /* Alinha o conteúdo ao centro */
     }
 
     .education li {
@@ -137,7 +138,7 @@
     }
 
     .education .education-content {
-        text-align: left; /* Alinha o texto à esquerda em telas pequenas */
+        text-align: center; /* Centraliza o texto em telas pequenas */
     }
 }
 
@@ -154,6 +155,8 @@
     margin-bottom: 0.5rem;
     word-break: break-word; /* Quebra de palavra para títulos */
     hyphens: auto; /* Hifenização automática para melhor quebra de linha */
+    overflow-wrap: break-word; /* Garante quebra de linha apropriada */
+    min-width: 0; /* Permite que o título quebre linha adequadamente */
 }
 
 .faculdade-info p {
