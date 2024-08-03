@@ -115,7 +115,11 @@
         justify-content: space-between;
     }
 
-    .education li,
+    .education li {
+        width: calc(50% - 1rem);
+        margin: 0.5rem;
+    }
+
     .education-item {
         width: calc(50% - 1rem);
         margin: 0.5rem;
