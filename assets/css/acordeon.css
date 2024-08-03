@@ -9,7 +9,6 @@
     border: 1px solid white;
     border-radius: 2rem;
     transition: 0.25s;
-    white-space: nowrap; /* Garante que o texto não quebre para a linha seguinte */
     overflow: hidden;    /* Opcional: Esconde qualquer texto que ultrapasse a largura do contêiner */
 }
 
