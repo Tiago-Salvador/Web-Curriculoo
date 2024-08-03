@@ -1,3 +1,4 @@
+/* Estilo geral para a lista de educação */
 .education {
     display: flex;
     flex-direction: column;
@@ -10,9 +11,9 @@
 
 .education-item {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
     margin: 1rem 0;
     padding: .5rem;
     border: 1px solid #ccc;
@@ -31,14 +32,15 @@
 
 .education li {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
     margin: 1rem 0;
     padding: .5rem;
     border: 1px solid #ccc;
     border-radius: 1rem;
     overflow: hidden; /* Garante que nada ultrapasse o contêiner */
+    text-align: center; /* Centraliza o texto */
 }
 
 .education .education-content {
@@ -66,9 +68,13 @@
 }
 
 .education li p {
-    margin: 0;
+    font-size: 1rem; /* Tamanho da fonte padrão */
+    margin: 0.5rem 0; /* Margem para separar os parágrafos */
+    word-break: break-word; /* Quebra palavras longas para evitar overflow */
+    overflow-wrap: break-word; /* Garante a quebra de palavras */
 }
 
+/* Estilo para imagens de certificado */
 .education li .certificado-details {
     display: flex;
     flex-direction: column;
@@ -87,17 +93,7 @@
     margin-top: .5rem;
 }
 
-.education li .h2 .descomplica::before {
-    content: '';
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-image: url('${.education.logourl}');
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: .5rem;
-}
-
+/* Estilo para links */
 .education li a {
     color: #007bff;
     text-decoration: none;
@@ -108,51 +104,7 @@
     color: #0056b3;
 }
 
-@media (min-width: 768px) {
-    .education {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .education li {
-        width: calc(50% - 1rem);
-        margin: 0.5rem;
-    }
-
-    .education-item {
-        width: calc(50% - 1rem);
-        margin: 0.5rem;
-    }
-
-    .education li .certificado-details {
-        align-items: flex-start; /* Alinha o conteúdo à esquerda para telas grandes */
-        text-align: left; /* Alinha o texto à esquerda */
-    }
-}
-
-@media (max-width: 767px) {
-    .education-item {
-        flex-direction: column; /* Altera a direção do layout para coluna em telas menores */
-        align-items: center; /* Alinha o conteúdo ao centro */
-    }
-
-    .education li {
-        width: 100%; /* Largura total em telas pequenas */
-        margin: 0.5rem 0; /* Margem ajustada para telas pequenas */
-    }
-
-    .education .education-content {
-        text-align: center; /* Centraliza o texto em telas pequenas */
-    }
-}
-
-@media (max-width: 480px) {
-    .education li h2 {
-        font-size: 1.2rem; /* Reduz o tamanho da fonte para telas muito pequenas */
-    }
-}
-
+/* Estilo para a seção de formação acadêmica */
 .faculdade-info {
     margin-bottom: 1rem;
     padding: 1rem;
@@ -171,9 +123,71 @@
 }
 
 .faculdade-info p {
-    margin: 0.5rem 0;
+    font-size: 1rem; /* Tamanho da fonte padrão */
+    margin: 0.5rem 0; /* Margem para separar os parágrafos */
+    word-break: break-word; /* Quebra palavras longas para evitar overflow */
+    overflow-wrap: break-word; /* Garante a quebra de palavras */
 }
 
 .faculdade-info strong {
     font-weight: 700;
+}
+
+/* Media Queries para ajustar o layout em diferentes tamanhos de tela */
+
+/* Ajustes para telas grandes */
+@media (min-width: 768px) {
+    .education {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .education li {
+        width: calc(50% - 1rem);
+        margin: 0.5rem;
+    }
+
+    .education-item {
+        width: calc(50% - 1rem);
+        margin: 0.5rem;
+    }
+
+    .education li .certificado-details {
+        align-items: center; /* Mantém o conteúdo centralizado */
+        text-align: center; /* Centraliza o texto */
+    }
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 767px) {
+    .education-item {
+        flex-direction: column; /* Altera a direção do layout para coluna em telas menores */
+        align-items: center; /* Alinha o conteúdo ao centro */
+    }
+
+    .education li {
+        width: 100%; /* Largura total em telas pequenas */
+        margin: 0.5rem 0; /* Margem ajustada para telas pequenas */
+    }
+
+    .education .education-content {
+        text-align: center; /* Centraliza o texto em telas pequenas */
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+    .education li h2 {
+        font-size: 1.2rem; /* Reduz o tamanho do título em telas muito pequenas */
+    }
+
+    .faculdade-info h2 {
+        font-size: 1.2rem; /* Reduz o tamanho do título em telas muito pequenas */
+    }
+
+    .faculdade-info p {
+        font-size: 0.75rem; /* Reduz ainda mais o tamanho da fonte para telas muito pequenas */
+        margin: 0.25rem 0; /* Margens menores para telas muito pequenas */
+    }
 }
