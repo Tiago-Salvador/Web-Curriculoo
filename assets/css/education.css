@@ -12,8 +12,8 @@
 .education-item {
     display: flex;
     flex-direction: column; /* Alinha o conteúdo em coluna */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
     margin: 1rem 0;
     padding: .5rem;
     border: 1px solid #ccc;
@@ -33,14 +33,14 @@
 .education li {
     display: flex;
     flex-direction: column; /* Alinha o conteúdo em coluna */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
     margin: 1rem 0;
     padding: .5rem;
     border: 1px solid #ccc;
     border-radius: 1rem;
     overflow: hidden; /* Garante que nada ultrapasse o contêiner */
-    text-align: center; /* Centraliza o texto */
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
 .education .education-content {
@@ -72,6 +72,7 @@
     margin: 0.5rem 0; /* Margem para separar os parágrafos */
     word-break: break-word; /* Quebra palavras longas para evitar overflow */
     overflow-wrap: break-word; /* Garante a quebra de palavras */
+    white-space: normal; /* Permite quebra de linha */
 }
 
 /* Estilo para imagens de certificado */
@@ -127,10 +128,7 @@
     margin: 0.5rem 0; /* Margem para separar os parágrafos */
     word-break: break-word; /* Quebra palavras longas para evitar overflow */
     overflow-wrap: break-word; /* Garante a quebra de palavras */
-}
-
-.faculdade-info strong {
-    font-weight: 700;
+    white-space: normal; /* Permite quebra de linha */
 }
 
 /* Media Queries para ajustar o layout em diferentes tamanhos de tela */
@@ -146,6 +144,7 @@
     .education li {
         width: calc(50% - 1rem);
         margin: 0.5rem;
+        text-align: left; /* Mantém o texto alinhado à esquerda */
     }
 
     .education-item {
@@ -169,6 +168,7 @@
     .education li {
         width: 100%; /* Largura total em telas pequenas */
         margin: 0.5rem 0; /* Margem ajustada para telas pequenas */
+        text-align: center; /* Centraliza o texto em telas pequenas */
     }
 
     .education .education-content {
