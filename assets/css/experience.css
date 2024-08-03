@@ -8,10 +8,17 @@
     flex-wrap: wrap;
 }
 
+.experience li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
 .experience li .period {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; /* Permite quebra de linha */
+    align-items: center; /* Alinha itens ao centro */
 }
 
 .experience li .period::before {
@@ -25,8 +32,15 @@
     margin-right: .5rem;
 }
 
+.experience li .description {
+    display: block;
+    width: 100%;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
 @media (max-width: 600px) {
     .experience li .period {
         flex-direction: column; /* Muda a direção para coluna em telas pequenas */
+        align-items: flex-start; /* Alinha itens ao início */
     }
 }
