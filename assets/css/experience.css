@@ -7,15 +7,18 @@
     margin-bottom: 1rem;
 }
 
-.position{
+.position {
     font-weight: bold; /* Destaca o título */
-    
+    display: flex; /* Garante que o conteúdo será alinhado corretamente */
+    align-items: center; /* Alinha a logo e o título verticalmente */
 }
 
 .position::before {
     content: '';
     display: inline-block;
     background-image: url('/assets/img/icons/Person-icon.png');
+    background-size: contain; /* Ajusta a imagem para caber no bloco */
+    background-repeat: no-repeat;
     width: 3rem; /* ajuste conforme necessário */
     height: 3rem; /* ajuste conforme necessário */
     margin-right: 0.5rem; /* ajuste conforme necessário */
@@ -28,7 +31,6 @@
     border-radius: 1rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento entre experiências */
-    flex-wrap: wrap;
 }
 
 .title-container {
