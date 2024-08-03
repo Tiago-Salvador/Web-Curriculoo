@@ -1,5 +1,3 @@
-
-
 .education {
     display: flex;
     flex-direction: column;
@@ -12,28 +10,28 @@
 
 .education-item {
     display: flex;
-    flex-direction: row; /* Ajusta para linha */
-    justify-content: flex-start; /* Alinha à esquerda */
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: flex-start;
     margin: 1rem 0;
     padding: .5rem;
     border: 1px solid #ccc;
     border-radius: 1rem;
-    position: relative; /* Para posicionamento absoluto */
+    position: relative;
 }
 
 .faculdade-logo {
-    width: 40px; /* ajuste o tamanho do logo */
+    width: 40px;
     height: 40px;
-    margin-right: 10px; /* ajuste o espaçamento entre o logo e o texto */
-    vertical-align: middle; /* alinha a logo no centro verticalmente */
-    display: inline-block; /* para que a logo seja tratada como um bloco inline */
-  }
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+}
 
 .education li {
     display: flex;
-    flex-direction: row; /* Ajusta para linha */
-    justify-content: flex; /* Alinha à esquerda */
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: flex-start;
     margin: 1rem 0;
     padding: .5rem;
@@ -42,44 +40,43 @@
 }
 
 .education .education-content {
-    flex: 1; /* Ocupa o espaço disponível */
+    flex: 1;
 }
 
 .logo-faculdade {
-    margin-right: .5rem; /* Espaçamento entre a logo e o texto */
+    margin-right: .5rem;
 }
 
 .logo-faculdade img {
-    width: 40px; /* Largura da logo */
-    height: 40px; /* Altura da logo */
-    border-radius: 50%; /* Formato circular */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .education li h2 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: .5rem;
+    word-break: break-word; /* Quebra de palavra para títulos */
 }
-
 
 .education li p {
     margin: 0;
-    clear:both;
 }
 
 .education li .certificado-details {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza verticalmente */
-    margin-top: 1rem; /* Espaçamento entre o título e a imagem */
+    align-items: center;
+    margin-top: 1rem;
 }
 
 .education li .certificado-details img.certificado-img {
     max-width: 100%; /* Ajusta a largura da imagem */
     height: auto;
     display: block;
-    border-radius: 1rem; /* Arredonda as bordas da imagem */
-    margin-top: .5rem; /* Espaçamento entre o título e a imagem */
+    border-radius: 1rem;
+    margin-top: .5rem;
 }
 
 .education li .h2 .descomplica::before {
@@ -94,51 +91,51 @@
 }
 
 .education li a {
-    color: #007bff; /* Cor para links */
+    color: #007bff;
     text-decoration: none;
-    transition: color 0.3s ease; /* Efeito de transição suave */
+    transition: color 0.3s ease;
 }
 
 .education li a:hover {
-    color: #0056b3; /* Cor ao passar o mouse */
+    color: #0056b3;
 }
 
 @media (min-width: 768px) {
     .education {
-        flex-direction: row; /* Altera para linha */
-        flex-wrap: wrap; /* Permite que os itens quebrem linha conforme necessário */
-        justify-content: space-between; /* Espaçamento entre os itens */
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .education li {
-        width: calc(50% - 1rem); /* Calcula 50% da largura menos o espaçamento */
-        margin: 0.5rem; /* Espaçamento entre os itens */
+        width: calc(50% - 1rem);
+        margin: 0.5rem;
     }
 
     .education-item {
-        width: calc(50% - 1rem); /* Calcula 50% da largura menos o espaçamento */
-        margin: 0.5rem; /* Espaçamento entre os itens */
+        width: calc(50% - 1rem);
+        margin: 0.5rem;
     }
 }
 
-
 .faculdade-info {
-    margin-bottom: 1rem; /* Espaçamento inferior */
-    padding: 1rem; /* Espaçamento interno */
-    border: 1px solid #ccc; /* Borda */
-    border-radius: 1rem; /* Borda arredondada */
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
 }
 
 .faculdade-info h2 {
-    font-size: 1.5rem; /* Tamanho da fonte para o título */
-    font-weight: 700; /* Negrito */
-    margin-bottom: 0.5rem; /* Espaçamento inferior */
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    word-break: break-word; /* Quebra de palavra para títulos */
 }
 
 .faculdade-info p {
-    margin: 0.5rem 0; /* Espaçamento ao redor dos parágrafos */
+    margin: 0.5rem 0;
 }
 
 .faculdade-info strong {
-    font-weight: 700; /* Negrito para elementos strong */
+    font-weight: 700;
 }
