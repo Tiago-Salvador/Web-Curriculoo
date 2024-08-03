@@ -65,15 +65,15 @@ function updateEducation(educationData) {
 
 
 function updateProfessionalExperience(profileData) {
-    const professionalExperience = document.getElementById('profile.professionalExperience');
-    professionalExperience.innerHTML = profileData.professionalExperience.map(experience => {
+    const professionalExperienceList = document.getElementById('professionalExperienceList');
+    professionalExperienceList.innerHTML = profileData.professionalExperience.map(experience => {
         return `
-            <li>
+            <div class="experience-item">
                 <h3 class="title">${experience.name}</h3>
-                <p class="position">${experience.position}</p> <!-- Adicionando o cargo -->
+                <p class="position">${experience.position}</p>
                 <p class="period">${experience.period}</p>
-                <p>${experience.description}</p>
-            </li>
+                <p class="description">${experience.description}</p>
+            </div>
         `;
     }).join('');
 }

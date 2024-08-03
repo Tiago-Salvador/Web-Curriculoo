@@ -5,23 +5,27 @@
     padding: 0;
     list-style: none;
     margin-bottom: 1rem;
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd; /* Adiciona uma borda ao redor da experiência */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    padding: 1rem; /* Adiciona espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento entre experiências */
+    background-color: #f9f9f9; /* Cor de fundo leve */
     flex-wrap: wrap;
 }
 
-.experience li {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-}
-
-.experience li .period {
+.experience-item .period {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; /* Permite quebra de linha */
     align-items: center; /* Alinha itens ao centro */
 }
 
-.experience li .period::before {
+.experience-item .period::before {
     content: '';
     display: inline-block;
     width: 1rem;
@@ -32,14 +36,14 @@
     margin-right: .5rem;
 }
 
-.experience li .description {
+.experience-item .description {
     display: block;
     width: 100%;
     text-align: left; /* Alinha o texto à esquerda */
 }
 
 @media (max-width: 600px) {
-    .experience li .period {
+    .experience-item .period {
         flex-direction: column; /* Muda a direção para coluna em telas pequenas */
         align-items: flex-start; /* Alinha itens ao início */
     }
