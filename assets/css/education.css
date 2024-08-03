@@ -124,7 +124,7 @@
 
 .faculdade-info p {
     font-size: 1rem; /* Tamanho da fonte padrão */
-    margin: 0.5rem 0; /* Margem para separar os parágrafos */
+    margin: 0,8rem 0; /* Margem para separar os parágrafos */
     word-break: break-word; /* Quebra palavras longas para evitar overflow */
     overflow-wrap: break-word; /* Garante a quebra de palavras */
     white-space: normal; /* Permite quebra de linha */
