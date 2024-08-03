@@ -21,14 +21,14 @@
     display: flex;
     align-items: center; /* Alinha a logo e o título verticalmente */
     margin-bottom: 0.75rem; /* Espaçamento abaixo do título */
-    font-weight: bold;
 
 }
 
 .logo {
-    width: 2rem; /* Tamanho pequeno da logo */
-    height: 2rem;
-    margin-right: 0.75rem; /* Espaçamento entre a logo e o título */
+    width: 3rem; /* Tamanho pequeno da logo */
+    height: 3rem;
+    border-radius: 1rem;
+    margin-right: 1rem; /* Espaçamento entre a logo e o título */
 }
 
 .title {
