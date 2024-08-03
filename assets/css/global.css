@@ -28,6 +28,11 @@ body, .background {
     border-radius: 10px; /* Bordas arredondadas */
 }
 
+p {
+    line-height: 1.6; /* Ajusta a altura da linha para melhorar a legibilidade */
+    margin-bottom: 1rem; /* Espaçamento abaixo de cada parágrafo */
+}
+
 /*
 .main ::before{
     content: '';
@@ -72,7 +77,15 @@ body, .background {
     .main ::after {
         width: 5vw;
     }
+
+    p {
+        /* Adiciona padding para garantir que o texto não fique muito próximo das bordas */
+        padding: 0 1rem;
+        word-wrap: break-word; /* Quebra palavras longas se necessário */
+        overflow-wrap: break-word; /* Quebra palavras longas se necessário */
+    }
 }
+
 
 @media (max-width: 767px) {
     body, .background {
