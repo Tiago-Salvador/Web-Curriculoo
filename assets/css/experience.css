@@ -11,6 +11,7 @@
     font-weight: bold; /* Destaca o título */
     display: flex; /* Garante que o conteúdo será alinhado corretamente */
     align-items: center; /* Alinha a logo e o título verticalmente */
+    font-size: 2rem;
 }
 
 .position::before {
