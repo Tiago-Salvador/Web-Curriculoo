@@ -75,6 +75,8 @@
     align-items: center; /* Centraliza a imagem e o conteúdo */
     margin-top: 1rem;
     overflow: hidden; /* Garante que nada ultrapasse o contêiner */
+    border: none; /* Remove borda se houver */
+    padding: 0; /* Remove padding se houver */
 }
 
 .education li .certificado-details img.certificado-img {
@@ -83,7 +85,7 @@
     max-height: 200px; /* Define a altura máxima da imagem */
     object-fit: contain; /* Ajusta a imagem para preencher o contêiner mantendo a proporção */
     display: block;
-    border-radius: 1rem;
+    border-radius: 0; /* Remove borda arredondada se houver */
     margin-top: .5rem;
 }
 
