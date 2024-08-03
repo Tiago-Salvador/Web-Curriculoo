@@ -1,15 +1,10 @@
-
-
-*{
+* {
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
-    
 }
 
-a{
-    .informations a{
-    color:white;
-}
+a {
+    color: white;
 }
 
 body, .background {
@@ -30,8 +25,9 @@ body, .background {
     padding: 1rem;
     border: 1px solid white;
     max-width: 1200px; /* Define uma largura máxima para o contêiner */
-    border-radius: px; /* Bordas arredondadas */
+    border-radius: 10px; /* Bordas arredondadas */
 }
+
 /*
 .main ::before{
     content: '';
@@ -63,21 +59,17 @@ body, .background {
 }
 */
 
-
-@media only screen and (min-width: 768px){
-    
-    .main{
+@media only screen and (min-width: 768px) {
+    .main {
         max-width: 1024px;
-        margin:  1rem auto;
+        margin: 1rem auto;
     }
 
-    .main ::before{
+    .main ::before {
         width: 70vw;
-
     }
 
-
-    .main ::after{
+    .main ::after {
         width: 5vw;
     }
 }
