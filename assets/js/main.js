@@ -64,6 +64,21 @@ function updateEducation(educationData) {
 
 
 
+function updateProfessionalExperience(profileData) {
+    const professionalExperience = document.getElementById('profile.professionalExperience');
+    professionalExperience.innerHTML = profileData.professionalExperience.map(experience => {
+        return `
+            <li>
+                <h3 class="title">${experience.name}</h3>
+                <p class="position">${experience.position}</p> <!-- Adicionando o cargo -->
+                <p class="period">${experience.period}</p>
+                <p>${experience.description}</p>
+            </li>
+        `;
+    }).join('');
+}
+
+
 function updatePortfolio(profileData) {
     const portfolio = document.getElementById('profile.portfolio');
     if (portfolio) {
