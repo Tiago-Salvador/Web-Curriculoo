@@ -67,9 +67,6 @@
 
 .education li p {
     margin: 0;
-    word-break: break-word; /* Quebra de palavra para parágrafos */
-    overflow-wrap: break-word; /* Garante quebra de linha apropriada */
-    white-space: normal; /* Permite quebra de linha automática */
 }
 
 .education li .certificado-details {
@@ -150,9 +147,29 @@
     .education li h2 {
         font-size: 1.2rem; /* Reduz o tamanho da fonte para telas muito pequenas */
     }
-    
-    .education li p {
-        font-size: 0.9rem; /* Ajusta o tamanho da fonte dos parágrafos em telas muito pequenas */
-        line-height: 1.4; /* Melhora a legibilidade do texto em telas pequenas */
-    }
+}
+
+.faculdade-info {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+}
+
+.faculdade-info h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    word-break: break-word; /* Quebra de palavra para títulos */
+    overflow-wrap: break-word; /* Garante quebra de linha apropriada */
+    white-space: normal; /* Permite quebra de linha automática */
+    min-width: 0; /* Permite que o título quebre linha adequadamente */
+}
+
+.faculdade-info p {
+    margin: 0.5rem 0;
+}
+
+.faculdade-info strong {
+    font-weight: 700;
 }
