@@ -60,8 +60,8 @@
     font-weight: 700;
     margin-bottom: .5rem;
     word-break: break-word; /* Quebra de palavra para títulos */
-    hyphens: auto; /* Hifenização automática para melhor quebra de linha */
     overflow-wrap: break-word; /* Garante quebra de linha apropriada */
+    white-space: normal; /* Permite quebra de linha automática */
     min-width: 0; /* Permite que o título quebre linha adequadamente */
 }
 
@@ -127,7 +127,6 @@
 
     .education li .certificado-details {
         align-items: flex-start; /* Alinha o conteúdo à esquerda para telas grandes */
-        margin-top: 1rem;
         text-align: left; /* Alinha o texto à esquerda */
     }
 }
@@ -160,8 +159,8 @@
     font-weight: 700;
     margin-bottom: 0.5rem;
     word-break: break-word; /* Quebra de palavra para títulos */
-    hyphens: auto; /* Hifenização automática para melhor quebra de linha */
     overflow-wrap: break-word; /* Garante quebra de linha apropriada */
+    white-space: normal; /* Permite quebra de linha automática */
     min-width: 0; /* Permite que o título quebre linha adequadamente */
 }
 
