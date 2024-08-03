@@ -15,7 +15,6 @@
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento entre experiências */
     flex-wrap: wrap;
-    background-color: #f9f9f9; /* Cor de fundo leve */
 }
 
 .title-container {
