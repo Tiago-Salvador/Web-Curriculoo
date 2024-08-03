@@ -33,7 +33,7 @@
       }
     ],
     "softSkills": [
-      "Atendiment ao Cliente",
+      "Atendimento ao Cliente",
       "Prospecção de Vendas",
       "Gestão de Conflitos",
       "Trabalho em Equipe",
@@ -76,44 +76,38 @@
       "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true",
       "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/Certificado%20-%20Object-Oriented%20Developer.jpg?raw=true"
     },
-  {
-    "curso": "Programação Básica",
-    "duracao": "160 Horas",
-    "instituicao": "Faculdade Digital Descomplica",
-    "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true",
-    "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/Certificado%20-%20Programming%20Basics.jpg?raw=true"
-  },
     {
-        "curso": "Arquitetura e Organização de Computadores",
-        "duracao": "240 Horas",
-        "instituicao": "Faculdade Digital Descomplica",
-        "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true",
-        "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/Certificado%20-%20Arquitetura%20e%20Organiza%C3%A7%C3%A3o%20de%20Computadores.jpg?raw=true"
+      "curso": "Programação Básica",
+      "duracao": "160 Horas",
+      "instituicao": "Faculdade Digital Descomplica",
+      "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true",
+      "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/Certificado%20-%20Programming%20Basics.jpg?raw=true"
+    },
+    {
+      "curso": "Arquitetura e Organização de Computadores",
+      "duracao": "240 Horas",
+      "instituicao": "Faculdade Digital Descomplica",
+      "logo_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/icons/logo-descomplica.png?raw=true",
+      "certificado_url": "https://github.com/Tiago-Salvador/Web-Curriculo/blob/main/assets/img/Certificados/Certificado%20-%20Arquitetura%20e%20Organiza%C3%A7%C3%A3o%20de%20Computadores.jpg?raw=true"
     }
-
   ],
-
-
   "professionalExperience": [
     {
       "name": "Academia - Engenharia do Corpo",
       "period": "2021 - até o momento",
-      "description": "Sou um profissional com 3 anos de experiência em atendimento ao cliente, pós-vendas, prospecção e retenção de vendas.\nTenho habilidades avançadas em documentação com o pacote Office e sou especialista no uso do ChatGPT para criação, desenvolvimento e manutenção do Chat PRO, uma ferramenta de automação do WhatsApp.\nAlém disso, sou responsável pelo setor financeiro da empresa, onde aplico minha sólida experiência em administração e desenvolvimento de liderança no ambiente de trabalho, sempre focando na excelência e na melhoria contínua da empresa."
+      "description": "💼 Com três anos de experiência em atendimento ao cliente, pós-vendas, prospecção e retenção de vendas, destaco-me pela minha facilidade de comunicação, criatividade e capacidade de trabalhar em equipe. Tenho habilidades avançadas em documentação com o pacote Office e sou especialista no uso do ChatGPT para criação, desenvolvimento e manutenção do Chat PRO, uma ferramenta de automação do WhatsApp.\b📊 No setor financeiro da empresa, aplico minha sólida experiência em administração e liderança, sempre focando na excelência e na melhoria contínua. Minha comunicação clara e empática garante a satisfação dos clientes, enquanto minha criatividade oferece soluções inovadoras para desafios diários.\b🤝 Acredito que o sucesso é alcançado por meio do trabalho em equipe, promovendo um ambiente colaborativo e motivador. Estou sempre em busca de novas oportunidades para aprender e crescer, tanto profissional quanto pessoalmente."
     }
-    
   ],
-  
-    "portfolio": [
-      {
-        "name": "Pokedex com API",
-        "url": "https://github.com/Tiago-Salvador/js-developer-pokedex",
-        "github": true
-      },
-      {
-        "name": "Netflix Clone",
-        "url": "https://github.com/Tiago-Salvador/NetflixClone-Portifolio",
-        "github": true
-      }
-    ]
-  }
-  
+  "portfolio": [
+    {
+      "name": "Pokedex com API",
+      "url": "https://github.com/Tiago-Salvador/js-developer-pokedex",
+      "github": true
+    },
+    {
+      "name": "Netflix Clone",
+      "url": "https://github.com/Tiago-Salvador/NetflixClone-Portifolio",
+      "github": true
+    }
+  ]
+}
