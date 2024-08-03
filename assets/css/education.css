@@ -124,6 +124,12 @@
         width: calc(50% - 1rem);
         margin: 0.5rem;
     }
+
+    .education li .certificado-details {
+        align-items: flex-start; /* Alinha o conteúdo à esquerda para telas grandes */
+        margin-top: 1rem;
+        text-align: left; /* Alinha o texto à esquerda */
+    }
 }
 
 @media (max-width: 767px) {
