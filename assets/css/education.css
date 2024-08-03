@@ -77,6 +77,8 @@
 .education li .certificado-details img.certificado-img {
     max-width: 100%; /* Ajusta a largura da imagem para não ultrapassar o contêiner */
     height: auto; /* Mantém a proporção da imagem */
+    max-height: 200px; /* Define a altura máxima da imagem */
+    object-fit: cover; /* Ajusta a imagem para preencher o contêiner */
     display: block;
     border-radius: 1rem;
     margin-top: .5rem;
