@@ -154,7 +154,7 @@
 
     .education li .certificado-details {
         align-items: center; /* Mantém o conteúdo centralizado */
-        text-align: center; /* Centraliza o texto */
+        text-align: center; /* Centraliza o texto dentro do contêiner do certificado */
     }
 }
 
