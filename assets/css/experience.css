@@ -1,19 +1,16 @@
-/* Estilo básico */
 .experience {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.experience li {
     margin-bottom: 1rem;
 }
 
 .experience li .period {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* Permite quebra de linha */
 }
 
 .experience li .period::before {
@@ -27,59 +24,8 @@
     margin-right: .5rem;
 }
 
-/* Media query para telas pequenas (smartphones) */
 @media (max-width: 600px) {
-    .experience {
-        padding: 0.5rem;
-    }
-
     .experience li .period {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .experience li .period::before {
-        width: 0.8rem;
-        height: 0.8rem;
-        margin-right: 0;
-        margin-bottom: 0.5rem;
-    }
-}
-
-/* Media query para telas médias (tablets) */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .experience {
-        padding: 1rem;
-    }
-
-    .experience li .period {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .experience li .period::before {
-        width: 0.9rem;
-        height: 0.9rem;
-        margin-right: 0;
-        margin-bottom: 0.5rem;
-    }
-}
-
-/* Media query para telas grandes (desktops) */
-@media (min-width: 1025px) {
-    .experience {
-        padding: 2rem;
-    }
-
-    .experience li .period {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .experience li .period::before {
-        width: 1rem;
-        height: 1rem;
-        margin-right: 0.5rem;
-        margin-bottom: 0;
+        flex-direction: column; /* Muda a direção para coluna em telas pequenas */
     }
 }
