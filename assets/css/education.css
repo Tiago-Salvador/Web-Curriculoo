@@ -125,15 +125,7 @@
         align-items: flex-start; /* Alinha o conteúdo à esquerda para telas grandes */
         text-align: left; /* Alinha o texto à esquerda */
     }
-
-    /* Ajuste para o elemento <p> */
-    .education p {
-        margin: 0; /* Remove margens padrão */
-        word-wrap: break-word; /* Quebra palavras longas se necessário */
-        hyphens: auto; /* Hifenização automática para palavras longas */
-    }
 }
-
 
 @media (max-width: 767px) {
     .education-item {
