@@ -11,10 +11,28 @@
     display: flex;
     flex-direction: column;
     border: 1px solid #ddd; /* Adiciona uma borda ao redor da experiência */
-    border-radius: 1rem;
-    padding: 1rem; /* Adiciona espaçamento interno */
+    border-radius: 1rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento entre experiências */
     flex-wrap: wrap;
+    background-color: #f9f9f9; /* Cor de fundo leve */
+}
+
+.title-container {
+    display: flex;
+    align-items: center; /* Alinha a logo e o título verticalmente */
+    margin-bottom: 0.5rem; /* Espaçamento abaixo do título */
+}
+
+.logo {
+    width: 1.5rem; /* Tamanho pequeno da logo */
+    height: 1.5rem;
+    margin-right: 0.5rem; /* Espaçamento entre a logo e o título */
+}
+
+.title {
+    font-size: 1.2rem; /* Ajusta o tamanho do título */
+    font-weight: bold; /* Destaca o título */
 }
 
 .experience-item .period {
