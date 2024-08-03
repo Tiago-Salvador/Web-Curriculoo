@@ -69,7 +69,10 @@ function updateProfessionalExperience(profileData) {
     professionalExperienceList.innerHTML = profileData.professionalExperience.map(experience => {
         return `
             <div class="experience-item">
-                <h3 class="title">${experience.name}</h3>
+                <div class="title-container">
+                    <img src="${experience.logoUrl}" alt="${experience.name} Logo" class="logo">
+                    <h3 class="title">${experience.name}</h3>
+                </div>
                 <p class="position">${experience.position}</p>
                 <p class="period">${experience.period}</p>
                 <p class="description">${experience.description}</p>
