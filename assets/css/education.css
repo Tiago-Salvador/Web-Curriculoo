@@ -167,12 +167,10 @@
     .education li {
         width: 100%; /* Largura total em telas pequenas */
         margin: 0.5rem 0; /* Margem ajustada para telas pequenas */
-        text-align: center; /* Centraliza o texto em telas pequenas */
+        
     }
 
-    .education .education-content {
-        text-align: center; /* Centraliza o texto em telas pequenas */
-    }
+
 }
 
 /* Ajustes para telas muito pequenas */
