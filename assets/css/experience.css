@@ -12,6 +12,15 @@
     
 }
 
+.position::before {
+    content: '';
+    display: inline-block;
+    background-image: url('/assets/img/icons/Person-icon.svg');
+    width: 1rem; /* ajuste conforme necessário */
+    height: 1rem; /* ajuste conforme necessário */
+    margin-right: 0.5rem; /* ajuste conforme necessário */
+}
+
 .experience-item {
     display: flex;
     flex-direction: column;
