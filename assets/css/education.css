@@ -184,7 +184,7 @@
     }
 
     .faculdade-info p {
-        font-size: 0.75rem; /* Reduz ainda mais o tamanho da fonte para telas muito pequenas */
+        font-size: 1rem; /* Reduz ainda mais o tamanho da fonte para telas muito pequenas */
         margin: 0.25rem 0; /* Margens menores para telas muito pequenas */
     }
 }
