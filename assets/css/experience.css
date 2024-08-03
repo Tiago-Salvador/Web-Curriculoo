@@ -7,6 +7,11 @@
     margin-bottom: 1rem;
 }
 
+.position{
+    font-weight: bold; /* Destaca o título */
+    
+}
+
 .experience-item {
     display: flex;
     flex-direction: column;
