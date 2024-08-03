@@ -147,6 +147,12 @@
     }
 }
 
+@media (max-width: 480px) {
+    .education li h2 {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte para telas muito pequenas */
+    }
+}
+
 .faculdade-info {
     margin-bottom: 1rem;
     padding: 1rem;
