@@ -93,6 +93,16 @@ function updatePortfolio(profileData) {
     }
 }
 
+function updateAboutMe(profileData) {
+    const aboutMeSection = document.querySelector('.acordeon .content .about-me');
+    if (aboutMeSection) {
+        aboutMeSection.innerHTML = `
+            <p><strong>About Me:</strong> ${profileData.aboutMe.description}</p>
+            <p><strong>Skills:</strong> ${profileData.aboutMe.skills.join(', ')}</p>
+        `;
+    }
+}
+
 // Adicionar funcionalidade de menu
 document.getElementById('menu-button').addEventListener('click', function() {
     var optionsList = document.getElementById('options-list');
@@ -120,4 +130,5 @@ document.addEventListener('click', function(event) {
     updateEducation(profileData.education);
     updateProfessionalExperience(profileData);
     updatePortfolio(profileData);
+    updateAboutMe(profileData); // Atualiza a seção "About Me"
 })();
