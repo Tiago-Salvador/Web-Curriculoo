@@ -5,10 +5,15 @@
     position: relative;
 }
 
+/* Container do menu no canto superior direito */
 .header-menu {
-    position: relative;
+    position: fixed;
+    top: 1rem; /* Ajuste conforme necessário */
+    right: 1rem; /* Ajuste conforme necessário */
+    z-index: 1000; /* Garante que a lista fique acima de outros elementos */
 }
 
+/* Estilo do botão de menu */
 #menu-button {
     background: none;
     border: none;
@@ -16,16 +21,17 @@
     padding: 0;
 }
 
+/* Imagem do botão de menu */
 #menu-button img {
     width: 2rem;
     height: 2rem;
 }
 
-/* CSS da lista de opções */
+/* Estilo da lista de opções */
 .options-list {
     display: none;
     position: absolute;
-    top: 3rem; /* Ajuste conforme necessário */
+    top: 2.5rem; /* Ajuste conforme necessário */
     right: 0;
     background: white;
     border: 1px solid #ccc;
@@ -44,6 +50,21 @@
 .options-list a:hover {
     background: #f0f0f0;
 }
+
+/* CSS do conteúdo anterior para o header */
+.header::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../img/icons/header.svg');
+}
+
 
 .header .photo {
     width: 250px;
