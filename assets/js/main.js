@@ -22,6 +22,15 @@ function updateProfileInfo(profileData) {
     email.href = `carregando:${profileData.email}`;
 }
 
+function toggleOptions() {
+    const optionsWindow = document.getElementById('optionsWindow');
+    if (optionsWindow.style.display === 'none') {
+        optionsWindow.style.display = 'block';
+    } else {
+        optionsWindow.style.display = 'none';
+    }
+}
+
 function updateSoftSkills(profileData) {
     const softSkills = document.getElementById('profile.skills.softSkills');
     softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li>${skill}</li>`).join('');
