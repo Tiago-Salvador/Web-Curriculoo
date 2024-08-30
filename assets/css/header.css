@@ -51,19 +51,6 @@
     background: #f0f0f0;
 }
 
-/* CSS do conteúdo anterior para o header */
-.header::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 2rem;
-    height: 2rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('../img/icons/header.svg');
-}
 
 
 .header .photo {
