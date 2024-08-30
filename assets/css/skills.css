@@ -25,16 +25,14 @@
 
 }
 
-.skills .personal ul{
+.skills .personal ul {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: row; /* Alinha itens horizontalmente */
+    flex-wrap: wrap; /* Permite quebra para múltiplas linhas */
     margin: 0;
     padding: 0;
-
 }
+
 
 .skills .personal ul li{ 
     margin: 0;
