@@ -18,51 +18,6 @@
     background-image: url('../img/icons/header.svg');
 }
 
-#optionsButton {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
-}
-
-#optionsWindow {
-    margin-top: 1rem;
-    padding: 1rem;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: none; /* Oculto inicialmente */
-    position: absolute;
-    top: 2rem;
-    right: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#optionsWindow ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#optionsWindow ul li {
-    margin: 0.5rem 0;
-}
-
-#optionsWindow ul li a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-#optionsWindow ul li a:hover {
-    text-decoration: underline;
-}
-
-
 .header .photo {
     width: 250px;
     height: 250px;
