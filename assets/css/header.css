@@ -5,9 +5,9 @@
     position: relative;
 }
 
-/* Container do menu no canto superior direito */
+/* Container do menu no canto superior direito dentro do main */
 .header-menu {
-    position: fixed;
+    position: absolute; /* Posiciona o menu em relação ao contêiner principal */
     top: 1rem; /* Ajuste conforme necessário */
     right: 1rem; /* Ajuste conforme necessário */
     z-index: 1000; /* Garante que a lista fique acima de outros elementos */
@@ -50,8 +50,6 @@
 .options-list a:hover {
     background: #f0f0f0;
 }
-
-
 
 .header .photo {
     width: 250px;
