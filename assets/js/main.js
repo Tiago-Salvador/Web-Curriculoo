@@ -1,4 +1,3 @@
-
 function updateProfileInfo(profileData) {
     const photo = document.getElementById('profile.photo');
     photo.src = profileData.photo;
@@ -19,9 +18,8 @@ function updateProfileInfo(profileData) {
 
     const email = document.getElementById('profile.email');
     email.innerText = profileData.email;
-    email.href = `carregando:${profileData.email}`;
+    email.href = `mailto:${profileData.email}`;
 }
-
 
 function updateSoftSkills(profileData) {
     const softSkills = document.getElementById('profile.skills.softSkills');
@@ -30,25 +28,26 @@ function updateSoftSkills(profileData) {
 
 function updateHardSkills(profileData) {
     const hardSkills = document.getElementById('profile.skills.hardSkills');
-    hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" title="${skill.name}"></li>`).join('');
+    hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => 
+        `<li><img src="${skill.logo}" alt="${skill.name}" title="${skill.name}"></li>`
+    ).join('');
 }
 
 function updateLanguages(profileData) {
     const languages = document.getElementById('profile.languages');
     languages.innerHTML = profileData.languages.map(language => `<li>${language}</li>`).join('');
 }
+
 function updateEducation(educationData) {
     const educationContainer = document.getElementById('profile.educationContainer');
     educationContainer.innerHTML = educationData.map(curso => {
         return `
-        
             <li class="education-item">
                 <div class="education-details">
-                     <h2 class="faculdade-titulo">
+                    <h2 class="faculdade-titulo">
                         <img src="${curso.logo_url}" alt="Logo ${curso.instituicao}" class="faculdade-logo">
-                         ${curso.curso}
+                        ${curso.curso}
                     </h2>
-                    
                     <p><strong>Duração:</strong> ${curso.duracao}</p>
                     <p><strong>Instituição:</strong> ${curso.instituicao}</p>
                     ${curso.certificado_url ? `
@@ -62,8 +61,6 @@ function updateEducation(educationData) {
         `;
     }).join('');
 }
-
-
 
 function updateProfessionalExperience(profileData) {
     const professionalExperienceList = document.getElementById('professionalExperienceList');
@@ -82,7 +79,6 @@ function updateProfessionalExperience(profileData) {
     }).join('');
 }
 
-
 function updatePortfolio(profileData) {
     const portfolio = document.getElementById('profile.portfolio');
     if (portfolio) {
@@ -97,6 +93,23 @@ function updatePortfolio(profileData) {
     }
 }
 
+// Adicionar funcionalidade de menu
+document.getElementById('menu-button').addEventListener('click', function() {
+    var optionsList = document.getElementById('options-list');
+    if (optionsList.style.display === 'block') {
+        optionsList.style.display = 'none';
+    } else {
+        optionsList.style.display = 'block';
+    }
+});
+
+// Fechar a lista de opções ao clicar fora dela
+document.addEventListener('click', function(event) {
+    var isClickInside = document.querySelector('.header-menu').contains(event.target);
+    if (!isClickInside) {
+        document.getElementById('options-list').style.display = 'none';
+    }
+});
 
 (async () => {
     const profileData = await fetchProfileData();
