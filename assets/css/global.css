@@ -1,91 +1,50 @@
 * {
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo total de largura e altura dos elementos */
+    font-family: "Open Sans", sans-serif; /* Define a fonte padrão para todos os elementos */
 }
 
 a {
-    color: white;
+    color: white; /* Define a cor do texto de todos os links como branca */
 }
 
 body, .background {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh; /* Garante que o body tenha no mínimo 100% da altura da viewport */
-    background-color: black;
-    color: white;
-    background-image: url('/assets/img/Background/tec-background.jpg');
-    background-size: cover; /* Cobrir todo o espaço disponível */
-    background-position: center; /* Centralizar o background */
-    background-repeat: no-repeat; /* Não repetir o background */
-    overflow-x: hidden; /* Evita scroll horizontal */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    min-height: 100vh; /* Garante que a altura mínima seja igual à altura da viewport */
+    background-color: black; /* Define a cor de fundo como preta */
+    color: white; /* Define a cor do texto como branca */
+    background-image: url('/assets/img/Background/tec-background.jpg'); /* Imagem de fundo */
+    background-size: cover; /* A imagem de fundo cobre todo o elemento */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Não repete a imagem de fundo */
+    overflow-x: hidden; /* Evita rolagem horizontal */
 }
 
 .main {
-    margin: .5rem auto; /* Centraliza o contêiner no meio da página */
-    padding: 1rem;
-    border: 1px solid white;
+    margin: 0.5rem auto; /* Centraliza o contêiner horizontalmente */
+    padding: 1rem; /* Adiciona um espaçamento interno */
+    border: 1px solid white; /* Adiciona uma borda branca ao contêiner */
     max-width: 1200px; /* Define uma largura máxima para o contêiner */
     border-radius: 10px; /* Bordas arredondadas */
 }
 
 p {
-    line-height: 1.6; /* Ajusta a altura da linha para melhorar a legibilidade */
-    margin-bottom: 1rem; /* Espaçamento abaixo de cada parágrafo */
+    line-height: 1.6; /* Define o espaçamento entre linhas para melhorar a legibilidade */
+    margin-bottom: 1rem; /* Espaçamento inferior para cada parágrafo */
 }
-
-/*
-.main ::before{
-    content: '';
-    background-image: url('/assets/img/Background/background-top.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 130vw;
-    height: 90vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.main ::after{
-    content: '';
-    background-image: url('/assets/img/Background/background-top.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 90vw;
-    height: 130vw;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    transform: rotate(180deg);
-}
-*/
 
 @media only screen and (min-width: 768px) {
     .main {
-        max-width: 1024px;
-        margin: 1rem auto;
-    }
-
-    .main ::before {
-        width: 70vw;
-    }
-
-    .main ::after {
-        width: 5vw;
+        max-width: 1024px; /* Define a largura máxima para o contêiner em telas maiores */
+        margin: 1rem auto; /* Adiciona margem ao contêiner */
     }
 
     p {
-        /* Adiciona padding para garantir que o texto não fique muito próximo das bordas */
-        padding: 0 1rem;
+        padding: 0 1rem; /* Adiciona padding horizontal para espaçamento adicional */
         word-wrap: break-word; /* Quebra palavras longas se necessário */
         overflow-wrap: break-word; /* Quebra palavras longas se necessário */
     }
 }
-
 
 @media (max-width: 767px) {
     body, .background {

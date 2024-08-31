@@ -1,79 +1,73 @@
-
-
-.acordeon{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 1rem 0;
-    border: 1px solid white;
-    border-radius: 2rem;
-    transition: 0.25s;
-    overflow: hidden;    /* Opcional: Esconde qualquer texto que ultrapasse a largura do contêiner */
+.acordeon {
+    position: relative; /* Define a posição como relativa, permitindo o posicionamento absoluto de elementos filhos */
+    display: flex; /* Usa o Flexbox para facilitar o layout interno */
+    flex-direction: column; /* Alinha os elementos filhos em uma coluna */
+    width: 100%; /* Define a largura como 100% do contêiner pai */
+    margin: 1rem 0; /* Define a margem superior e inferior */
+    border: 1px solid white; /* Define uma borda branca ao redor do acordeão */
+    border-radius: 2rem; /* Arredonda os cantos do contêiner */
+    transition: 0.25s; /* Suaviza as transições de propriedades */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do contêiner */
 }
 
 .acordeon.open,
-.acordeon:hover{
-    background-color: #0f84d79d;
-    border-color: #0f83d7;
-    
-}
-.acordeon .trigger{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: 1rem 2rem;
-    background-color: transparent;
-    color: white;
-    border: none;
+.acordeon:hover {
+    background-color: #0f84d79d; /* Muda a cor de fundo quando o acordeão está aberto ou ao passar o mouse */
+    border-color: #0f83d7; /* Muda a cor da borda */
 }
 
-.acordeon .trigger h2{
-    margin: 0;
-    font-size: 1.5rem;
-
+.acordeon .trigger {
+    display: flex; /* Flexbox para posicionar conteúdo */
+    justify-content: space-between; /* Espaço igual entre os elementos */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-weight: 700; /* Espessura da fonte */
+    padding: 1rem 2rem; /* Espaçamento interno */
+    background-color: transparent; /* Fundo transparente */
+    color: white; /* Cor do texto */
+    border: none; /* Remove qualquer borda padrão */
 }
 
-.acordeon .trigger:hover{
-    cursor: pointer;
+.acordeon .trigger h2 {
+    margin: 0; /* Remove a margem padrão */
+    font-size: 1.5rem; /* Define o tamanho da fonte */
+}
+
+.acordeon .trigger:hover {
+    cursor: pointer; /* Muda o cursor para indicar que o elemento é clicável */
 }
 
 .acordeon .trigger::after {
-    content: '';
-    display: inline-block;
-    position: absolute; /* Posiciona a imagem de forma absoluta dentro do contêiner pai */
-    right: 0; /* Alinha a imagem ao extremo direito */
-    top: 50%; /* Centraliza verticalmente a imagem */
-    transform: translateY(-50%); /* Ajuste fino para centralizar a imagem verticalmente */
-    width: 2rem;
-    height: 1rem;
-    margin-left: 0.5rem; /* Espaço à esquerda do ícone */
-    margin-right: 1rem; /* Espaço à direita do ícone */
-    background-image: url('/assets/img/icons/arrow-top.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: .25s;
+    content: ''; /* Adiciona um conteúdo vazio que será o ícone */
+    display: inline-block; /* Permite definir largura e altura */
+    position: absolute; /* Posiciona o ícone relativamente ao contêiner pai */
+    right: 0; /* Alinha o ícone à direita */
+    top: 50%; /* Posiciona verticalmente no meio */
+    transform: translateY(-50%); /* Ajuste fino para centralização vertical */
+    width: 2rem; /* Largura do ícone */
+    height: 1rem; /* Altura do ícone */
+    margin-left: 0.5rem; /* Espaçamento à esquerda */
+    margin-right: 1rem; /* Espaçamento à direita */
+    background-image: url('/assets/img/icons/arrow-top.svg'); /* Define a imagem de fundo */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: contain; /* Redimensiona a imagem para caber no contêiner */
+    transition: .25s; /* Suaviza a rotação da imagem */
 }
 
-
 .acordeon.open .trigger::after {
-    transform: rotate(180deg);
+    transform: rotate(180deg); /* Rotaciona o ícone quando o acordeão está aberto */
 }
 
 .acordeon .content {
-    display: none;
-    overflow: hidden;
-    height: 0;
-    transition: opacity .25s ease-in-out;
+    display: none; /* Oculta o conteúdo inicialmente */
+    overflow: hidden; /* Esconde qualquer transbordamento */
+    height: 0; /* Define a altura inicial como 0 */
+    transition: opacity .25s ease-in-out; /* Suaviza a transição de opacidade */
 }
 
 .acordeon.open .content {
-    display: block;
-    height: auto;
-    opacity: 1;
-    padding: 1rem; /* Adicione um padding para espaçamento interno */
-
+    display: block; /* Mostra o conteúdo quando o acordeão está aberto */
+    height: auto; /* Define a altura automaticamente */
+    opacity: 1; /* Torna o conteúdo visível */
+    padding: 1rem; /* Adiciona um padding para espaçamento interno */
 }
-

@@ -1,39 +1,30 @@
-
-
-.language{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
+.language {
+    display: flex; /* Define um contêiner flexível */
+    flex-direction: row; /* Alinha os itens em linha */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte se não houver espaço suficiente */
+    margin: 0; /* Remove a margem */
+    padding: 0; /* Remove o padding */
+    list-style: none; /* Remove os marcadores de lista padrão */
 }
 
-
-
-.language li{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 1rem;
-    font-weight: 700;
-    font-size: 1rem;
-
-
+.language li {
+    display: flex; /* Define um contêiner flexível para cada item de lista */
+    flex-direction: row; /* Alinha o conteúdo em linha */
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+    justify-content: space-between; /* Espaça os elementos dentro do item de lista */
+    padding-right: 1rem; /* Adiciona um espaçamento à direita */
+    font-weight: 700; /* Define a espessura da fonte */
+    font-size: 1rem; /* Define o tamanho da fonte */
 }
 
-.language li::before{
-    content: '';
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-image: url('/assets/img/icons/seta.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: .5rem;
-
+.language li::before {
+    content: ''; /* Cria um pseudo-elemento antes de cada item de lista */
+    display: inline-block; /* Exibe o pseudo-elemento como um bloco inline */
+    width: 1rem; /* Define a largura do ícone */
+    height: 1rem; /* Define a altura do ícone */
+    background-image: url('/assets/img/icons/seta.svg'); /* Adiciona uma imagem de fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+    background-size: contain; /* Ajusta a imagem para caber no contêiner */
+    margin-right: 0.5rem; /* Adiciona um espaçamento à direita do ícone */
 }
